@@ -1,0 +1,16 @@
+.text-img {
+	z-index: 100;
+	position: absolute;
+	color: rgb(255, 255, 255);
+	background-color: #f13453;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 10%;
+	font-size: 24px;
+	font-weight: bold;
+	left: 48px;
+	top: 65px;
+	-webkit-transform: rotate(380deg);
+	-moz-transform: rotate(380deg);
+}
+

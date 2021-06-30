@@ -1,0 +1,111 @@
+
+section{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4% 3% 6% 4%;
+    
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+    
+}
+.producto_nombre{
+    font-family: 'Abel', Arial;
+    color:rgb(2, 11, 15);
+    font-weight: 100;
+    display: block;
+    font-size: 28px;
+    margin-top: 55px;
+    margin-left: 40px;
+    margin-right: 45px;
+    width: 50x;
+    
+    
+    
+}
+
+.boton-text{
+    font-family: 'Abel', Arial;
+    display: block;
+   
+    color: white;
+    transition: 0s;
+   
+    
+}
+
+.precio{
+    font-family: 'Abel', Arial;
+    margin-top: 30px;
+    display: grid;
+    font-weight: 800;
+     top: 5px;
+    font-size: 25px;
+    right: 35em;
+    
+}
+.boton_agregar{
+    
+    text-decoration: none;
+    background-color: #011927;
+    padding: 10px;
+    height: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(1, 5, 7);
+    color: rgb(242, 245, 247);
+    font-size: 20px;
+    margin-top: 25px;
+    display: block;
+    margin: 0 auto;
+    width: 29%;
+    transition: 0.3s;
+}
+.boton_agregar:hover{
+    transition: 0.3s;    
+    background-color: rgb(8, 91, 129) ;
+ 
+}
+
+/* Point-zoom Container */
+.img-hover-zoom--point-zoom img {
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter 0.5s ease-out;
+  }
+  
+  /* The Transformation */
+.img-hover-zoom--point-zoom:hover img {
+    transform: scale(1.3);
+    
+}
+
+.regresar{
+    display: block;
+    width: 100px;
+    margin-top: 5px;
+    margin-left: 40%;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #081927;
+    border: 1px solid rgb(1, 5, 7);
+    color: rgb(242, 245, 247);
+    border-radius: 10px;
+   
+    font-weight: 900;
+}
+    .imagen{
+        display: grid;
+        justify-content: center;
+        overflow: hidden;
+        margin-left: 40%;
+        margin-top: 5%;
+        margin-right: 45px;
+        
+    }
+    
+.detalles{
+    text-align: center;  
+}

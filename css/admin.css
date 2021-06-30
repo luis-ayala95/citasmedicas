@@ -1,0 +1,148 @@
+table {
+    table-layout: fixed;
+    width: 75%;
+    border-collapse: collapse;
+    border: 3px ;
+    margin-top: 0%;
+    margin-left: 15%;
+    position: relative;
+    z-index: 1;
+    padding: 45px;
+    text-align: center;
+    border-radius: 10%;
+  }
+  table tr {
+    border-right: 2px solid rgb(28, 17, 58);
+    border-bottom: 2px solid rgb(28, 17, 58);
+    border-left: 3px solid rgb(28, 17, 58);
+  }
+  
+  td{
+     
+      background-color: white;
+      
+  }
+  .tab {
+    position: relative;
+    display: block;
+    padding: .625em;
+    right: 2%;
+    width: 81%;
+    height: 100%; 
+    border-top: 2px solid rgb(28, 17, 58);
+    border-right: 2px solid rgb(28, 17, 58);
+    border-left: 2px solid rgb(28, 17, 58);
+   
+    background-color: rgb(28, 17, 58);
+    color: white;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 0%;
+ 
+    
+  }
+  .Pro {
+    position: relative;
+    display: block;
+    padding: .625em;
+    right: 1%;
+    left: 33%;
+    width: 690%;
+    height: 100%;
+    color: white;
+  }
+
+  .btn {
+    background: #06151f;
+    background-image: url("../imagenes/actualizar.jpg");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    width: 70px;
+    border-radius: 900px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+   }
+   .btn:hover
+   {
+    width: 75px;
+    height: 75px;
+   }
+   .titulo{
+     background-color:rgb(28, 17, 58) ;
+     color: white;
+     margin-bottom: 0px;
+     width: 75%;
+     position: relative;
+    display: block;
+    margin-left: 5%;
+    
+   }
+   .btneliminar {
+    background: #06151f;
+    background-image: url("../imagenes/eliminar.png");
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    width: 70px;
+    border-radius: 900px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+   }
+   .btn:hover
+   {
+    width: 75px;
+    height: 75px;
+   }
+   .agotado {
+  
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    width: 70px;
+    border-radius: 900px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+   }
+   .btn:hover
+   {
+    width: 75px;
+    height: 75px;
+   }
+   .noagotado {
+  
+   
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    border: none;
+    padding: 20px;
+    width: 70px;
+    border-radius: 900px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+   }
+   .btn:hover
+   {
+    width: 75px;
+    height: 75px;
+   }
+   .proago{
+     font-size: 20%;
+     font-style: normal;
+     font-family: Arial;
+     font-weight: bold;
+   }
