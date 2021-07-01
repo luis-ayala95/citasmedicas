@@ -1,7 +1,7 @@
 <?php
 	$server="localhost";
-	$username="localhost";
-	$password="123456";
+	$username="root";
+	$password="";
 	$db="imss";
 
 	$mysql =new mysqli($server,$username,$password,$db);
