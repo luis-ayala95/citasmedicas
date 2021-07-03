@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript"  href="./js/scripts.js"></script>
 </head>
-<body>
+<body background=".\imagenes\citas-medicas.jpg">
 <header>
 <a href="./login.php" title="Iniciar Sesion" id="iniciosesion" >Iniciar Sesion</a>
 
