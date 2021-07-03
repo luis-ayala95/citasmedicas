@@ -14,7 +14,7 @@
 <header>
 <a href="./login.php" title="Iniciar Sesion" id="iniciosesion" >Iniciar Sesion</a>
 
-		<a href="./registrou.html" title="Registrarse" id="registrarse" >Registrate</a>
+		<a href="./formulariou.php" title="Registrarse" id="registrarse" >Registrate</a>
 	</header>
 	<section>
     <img src="./imagenes/img_user2.png" alt="Avatar" class="avatar"/>
@@ -31,7 +31,7 @@
 		<input type="text" id="usuario" name="Usuario" placeholder="Usuario" ><br>
         <input type="password" id="password" name="Password" placeholder="Password" ><br><br>
         <button type="submit" name="aceptar" value="aceptar">Iniciar Sesion</button>
-            <p>¿Aun no tienes cuenta? <a href="./registrou.html">Registrate</a> </p>
+            <p>¿Aun no tienes cuenta? <a href="./formulariou.php">Registrate</a> </p>
 		
 
 		
