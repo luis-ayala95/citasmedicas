@@ -2,19 +2,17 @@
 session_start();
 include "./conexion.php";
 
-	  
-			$mysql-> query("INSERT INTO registro (nombre, apellidoPaterno, apellidoMaterno, Domicilio, Ciudad, Estado, NSS, correo, password1, password2) VALUES(
+			$mysql-> query("INSERT INTO usuario (nombre, apellidoMaterno, apellidoPaterno,
+             domicilio, ciudad, estado, NSS, correo, password) VALUES(
 				'".$_REQUEST["Nombre"]."',	
-				'".$_REQUEST["ApellidoP"]."',
-				'".$_REQUEST["ApellidoM"]."',
+				'".$_REQUEST["ApellidoMaterno"]."',
+				'".$_REQUEST["ApellidoPaterno"]."',
                 '".$_REQUEST["Domicilio"]."',
                 '".$_REQUEST["Ciudad"]."',
                 '".$_REQUEST["Estado"]."',
                 '".$_REQUEST["NSS"]."',
                 '".$_REQUEST["Correo"]."',
-                '".$_REQUEST["Password1"]."',
-                '".$_REQUEST["Password2"]."'
-                
+                '".$_REQUEST["Password"]."'
                 )")or die($mysql-> error);
                 
 	
