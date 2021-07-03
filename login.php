@@ -14,7 +14,7 @@
 <header>
 <a href="./login.php" title="Iniciar Sesion" id="iniciosesion" >Iniciar Sesion</a>
 
-		<a href="./registrou.html" title="Registrarse" id="registrarse" >Registrate</a>
+		<a href="./formulariou.php" title="Registrarse" id="registrarse" >Registrate</a>
 	</header>
 	<section>
     
