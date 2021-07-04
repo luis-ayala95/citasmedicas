@@ -11,13 +11,16 @@
     <link rel="stylesheet" type="text/css" href="./css/icons.css"/>
     <link rel="stylesheet" type="text/css" href="./css/agotado.css"/>
     <link rel="stylesheet" type="text/css" href="./css/perfil.css"/>
+      <link rel="stylesheet" type="text/css" href="./css/encabezado.css"/>
+       <link rel="stylesheet" type="text/css" href="agotado./colorPiedePagina.css"/>
 
+    <link rel="stylesheet" type="text/css" href="./css/estilofondo.css">
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript"  href="./js/scripts.js"></script>
 </head>
-<body>
-	<header>
+<body class="fondo">
+	<header class="encabezado"> 
     <a href="./notificaciones.php" title="notificaciones">
 			<img src="./imagenes/carrito.png">
 		</a>	
@@ -87,7 +90,7 @@
             
 	</section>
 
-	<footer>
+	<footer class="pieDePagina">
             <div class="columna">
                 <div class="fila">
                     <div class="columna">
@@ -161,6 +164,9 @@
                                 <li>
                                     <a href="#!">
                                         Leslie Aylin Sanchez Ramirez
+                                    </a>
+                                    <a href="#!">
+                                        Rosita Escobar Figueroa
                                     </a>
                                 </li>
                                 
