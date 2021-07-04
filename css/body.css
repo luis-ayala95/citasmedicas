@@ -38,14 +38,7 @@ header a{
  
 
 }
-section{
-	width: 80%;
-	min-height: 500px;
-	padding: 2%;
-	margin:0 auto;
-	margin-left: 10%;
-	margin-top: 50px;
-}
+
 fieldset{
 	border:none;
 }

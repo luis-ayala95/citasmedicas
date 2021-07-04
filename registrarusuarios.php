@@ -3,7 +3,8 @@ session_start();
 include "./conexion.php";
 
 	  
-			$mysql-> query("INSERT INTO registro (nombre, apellidoPaterno, apellidoMaterno, Domicilio, Ciudad, Estado, NSS, correo, password) VALUES(
+			$mysql-> query("INSERT INTO usuario (nombre, apellidoPaterno, apellidoMaterno, domicilio , ciudad, estado, NSS, correo, 
+			contraseña) VALUES(
 				'".$_REQUEST["Nombre"]."',	
 				'".$_REQUEST["ApellidoP"]."',
 				'".$_REQUEST["ApellidoM"]."',
@@ -12,7 +13,7 @@ include "./conexion.php";
                 '".$_REQUEST["Estado"]."',
                 '".$_REQUEST["NSS"]."',
                 '".$_REQUEST["Correo"]."',
-                '".$_REQUEST["Password1"]."'
+                ' ".$_REQUEST["Contraseña"]."'
                 
                 )")or die($mysql-> error);
                 

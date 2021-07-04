@@ -133,3 +133,14 @@ input{
 	border:1px solid #fafafa;
 	color:#1e1e1e;
 }
+section{
+  
+   
+  background-color: #85C1E9;
+  opacity: 90%;
+  border-radius: 2%;
+}
+#formulario{
+  font-size: 1.2rem;
+  text-align: center;
+}

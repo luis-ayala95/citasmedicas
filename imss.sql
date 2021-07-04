@@ -1,4 +1,6 @@
 create database imss;
+
+
 use imss;
 create table registro(
 idRegistro int(8) unsigned primary key auto_increment not null, 
@@ -8,7 +10,7 @@ apellidoMaterno varchar(35) not null,
 Domicilio varchar(40) not null,
 Ciudad varchar(35) not null,
 Estado varchar(35) not null,
-NSS varchar(35) not null,
+NSS varchar(35) not null unique,
 correo varchar(35) not null,
 password varchar(35) not null
 );
@@ -26,6 +28,7 @@ fecha date not null,
 time time not  null
 -- aqui no se si tambien debe de ir clinica y domicilio de la clinica
 );
- create database notificacion(
- 
+ create table enfermedad(
+ idenfer int(8) unsigned primary key auto_increment not null,
+ nombre varchar(40) not null
  );
