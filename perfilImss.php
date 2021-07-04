@@ -19,15 +19,22 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript"  href="./js/scripts.js"></script>
 </head>
+<<<<<<< HEAD
 <body class="fondo">
 	<header class="encabezado"> 
     <a href="./notificaciones.php" title="notificaciones">
 			<img src="./imagenes/carrito.png">
+=======
+<body >
+	<header>
+    <a href="./notificaciones.php" title="notificaciones" id="notificaciones">
+			<img src="notificaciones.png">
+>>>>>>> master
 		</a>	
-		<a href="./ayuda.php" title="Ayuda" id="registrarse" >Ayuda</a>
-        <a href="./miInfo.php" title="Mi info" id="registrarse" >Mi Informacion</a>
-        <a href="./elegirEnfermedad.php" title="Crear Cita" id="registrarse" >Crear cita</a>
-        <a href="./perfilImss.php" title="Mis citas" id="iniciosesion" >Mis Citas</a>
+		<a href="./ayuda.php" title="Ayuda" id="ayuda" >Ayuda</a>
+        <a href="./miInfo.php" title="Mi info" id="info" >Mi Informacion</a>
+        <a href="./elegirEnfermedad.php" title="Crear Cita" id="crearCita" >Crear cita</a>
+        <a href="./perfilImss.php" title="Mis citas" id="MisCitas" >Mis Citas</a>
 
 		
 
