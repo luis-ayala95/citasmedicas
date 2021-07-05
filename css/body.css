@@ -2,11 +2,19 @@ html{
 	padding: 0px;
 	margin: 0px;
 }
+<<<<<<< HEAD
+
+=======
 body{
-	background-color: white;
+	
 	padding: 0px;
 	margin: 0px;
+	background-image: url("fondo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
 }
+>>>>>>> 10974d73693cd0b3b70d014d369234841e7531bf
 
 a {
 	font-weight: bolder;
@@ -62,9 +70,41 @@ fieldset{
     
 }
 
-#registrarse{
+#ayuda{
+    left: 70%;
+     margin-top: 1%;
+     color: white;
+   }
+  
+  
+#info{
+    left: 75%;
+     margin-top: 1%;
+     color: white;
+   }
+  
+  
+#crearCita{
     left: 85%;
      margin-top: 1%;
      color: white;
    }
+<<<<<<< HEAD
+=======
+  
+  
+#MisCitas{
+    left: 90%;
+     margin-top: 1%;
+     color: white;
+   }
+  
+#notificaciones{
+    left:95%;
+     margin-top: 1%;
+     color: white;
+	 height: 40px;
+	 width: 40px;
+   }
+>>>>>>> 94f66e1e9e8f6fb302bad7e436e5e20adb0c4816
   
