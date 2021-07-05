@@ -2,7 +2,7 @@
 	$server="localhost";
 	$username="root";
 	$password="";
-	$db="Imss";
+	$db="imss";
 
 	$mysql =new mysqli($server,$username,$password,$db);
 

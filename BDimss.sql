@@ -14,6 +14,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema Imss
 -- -----------------------------------------------------
+drop database imss;
 CREATE SCHEMA IF NOT EXISTS `Imss` DEFAULT CHARACTER SET utf8 ;
 USE `Imss` ;
 
@@ -34,6 +35,7 @@ CREATE TABLE IF NOT EXISTS `Imss`.`usuario` (
   PRIMARY KEY (`idusuario`),
   UNIQUE INDEX `idusuario_UNIQUE` (`idusuario` ASC))
 ENGINE = InnoDB;
+
 
 
 -- -----------------------------------------------------
@@ -59,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `Imss`.`sucursal` (
   PRIMARY KEY (`idsucursal`))
 ENGINE = InnoDB;
 
-
+select*from citas;
 -- -----------------------------------------------------
 -- Table `Imss`.`citas`
 -- -----------------------------------------------------
@@ -91,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `Imss`.`citas` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-
+ 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

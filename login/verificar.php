@@ -12,7 +12,7 @@ $re=$mysql->query("select * from usuario where NSS='".$_POST['NSS']."' AND
 					}
 					if (isset($arreglo)) {
 						$_SESSION['NSS'] = $arreglo;
-						header("Location: ../formulariou.php");
+						header("Location: ../perfilImss.php");
 					} else{
 						header("Location: ../login.php?error=datosinvalidos");
 					}

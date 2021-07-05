@@ -12,36 +12,39 @@
 <header>
 <a href="./login.php" title="Iniciar Sesion" id="iniciosesion" >Iniciar Sesion</a>
 
-		<a href="./registrou.html" title="Registrarse" id="registrarse" >Registrate</a>
+		<a href="./formulariou.php" title="Registrarse" id="registrarse" >Registrate</a>
 	</header>
 	<section>
                  
     <div class="login-page">
-        <div class="form">
+        <form method="post" action="./enviarEnfermedad.php">
         <h2>Selecciona la enfermedad que presentas:</h2>
 		
-        <input type="checkbox" id="cbox1" value="first_checkbox"><label>Bronquitis aguda (resfriado de pecho) Tos, mucosidad</label><br>
+        <input type="checkbox" name="checkbox[]" value="Bronquitis" >Bronquitis aguda (resfriado de pecho) Tos, mucosidad<br>
 
-        <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Resfriado común. Estornudos, moqueo o congestión nasal, dolor de garganta, tos.</label><br>
+        <input type="checkbox" name="checkbox[]" value="Resfriado" >Resfriado común. Estornudos, moqueo o congestión nasal, dolor de garganta, tos.<br>
 
-		<label><input type="checkbox" id="cbox3" value="first_checkbox">Infección de oído.( Dolor de oído, fiebre)</label><br>
+		<input type="checkbox" name="checkbox[]" value="InfeccióndeOido" >Infección de oído.( Dolor de oído, fiebre)<br>
 
-        <input type="checkbox" id="cbox4" value="second_checkbox"> <label for="cbox2">  Influenza (gripe)</label><br>
+        <input type="checkbox" name="checkbox[]" value="Influenza" >  Influenza (gripe)<br>
 
-		<label><input type="checkbox" id="cbox5" value="first_checkbox">Sinusitis</label><br>
+		<input type="checkbox" name="checkbox[]" value="Sinusitis" >Sinusitis<br>
 
-        <input type="checkbox" id="cbox6" value="second_checkbox"> <label for="cbox2">Infecciones de la piel</label><br>
+        <input type="checkbox" name="checkbox[]" value="InfeccionPiel" > Infecciones de la piel<br>
         
-		<label><input type="checkbox" id="cbox7" value="first_checkbox">Dolor de garganta.</label><br>
+		<input type="checkbox" name="checkbox[]" value="Dolorgarganta" >Dolor de garganta.<br>
 
-        <input type="checkbox" id="cbox8" value="second_checkbox"> <label for="cbox2">Infección urinaria.</label><br>
+        <input type="checkbox" name="checkbox[]" value="Infecciónurinaria" > Infección urinaria.<br>
 
-        <label><input type="checkbox" id="cbox9" value="first_checkbox">Infección Estomacal</label><br>
+        <input type="checkbox" name="checkbox[]" value="InfecciónEstomacal" >Infección Estomacal<br>
 
-        <input type="checkbox" id="cbox10" value="second_checkbox"> <label for="cbox2">Mareo</label><br>
-        <input type="checkbox" id="cbox11" value="second_checkbox"> <label for="cbox2">COVID-19</label><br><br>
-        <button type="submit" name="aceptar" value="aceptar" ><a href="./registrou.html">Siguiente</a></button>
-        <button type="submit" name="aceptar" value="aceptar" style="margin-left: 10px"><a href="./registrou.html">No encuentro mi enfermedad</a></button>		
+        <input type="checkbox" name="checkbox[]" value="Mareo" > Mareo<br>
+
+        <input type="checkbox" name="checkbox[]" value="COVID-19" > COVID-19<br><br>
+
+    
+       <button type="submit" name="aceptar" value="aceptar" >     Siguiente</button>
+        <button  name="aceptar1" value="aceptar1" style="margin-left: 10px"><a href="./sintomas.php">No encuentro mi enfermedad</a></button>		
 		
 		</form>
 	
