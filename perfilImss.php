@@ -19,8 +19,29 @@
 </head>
 <body class="fondo">
 	<header class="encabezado"> 
+<<<<<<< HEAD
         <img src="./imagenes/logoH.png" id="logo">
    
+=======
+    <a href="./notificaciones.php" title="notificaciones">
+			<img src="./imagenes/carrito.png">
+<body >
+	<header>
+    <a href="./notificaciones.php" title="notificaciones" id="notificaciones">
+			<img src="notificaciones.png">
+		</a>	
+		<a href="./ayuda.php" title="Ayuda" id="ayuda" >Ayuda</a>
+        <a href="./miInfo.php" title="Mi info" id="info" >Mi Informacion</a>
+        <a href="./elegirEnfermedad.php" title="Crear Cita" id="crearCita" >Crear cita</a>
+        <a href="./perfilImss.php" title="Mis citas" id="MisCitas" >Mis Citas</a>
+
+		
+
+        
+
+        
+
+>>>>>>> df9bac264f83087481d9af317adc876229b0a72d
 		
 		</a>	
 </header>

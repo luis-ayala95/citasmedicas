@@ -1,7 +1,7 @@
 <?php
 	$server="localhost";
-	$username="root";
-    $password="123456";
+	$username="CitasImss";
+    $password="123";
 	$db="imss";
   $mysql =new mysqli($server,$username,$password,$db);
   
