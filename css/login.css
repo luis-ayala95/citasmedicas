@@ -5,12 +5,11 @@ font-size: 160%;
 
 img.avatar {
   position: relative;
-  margin-left: 30em;
+  margin-left: 0em;
     padding: 10px;
-    width: 13%;
+    width: 40%;
     border-radius: 50%;
     background: linear-gradient(50deg, #0099ff, #00ffcc);
-    margin-top: auto;
 }
 .texto{
     left: 50em;

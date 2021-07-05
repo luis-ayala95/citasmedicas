@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/redes_sociales.css">
     <link rel="stylesheet" type="text/css" href="./css/icons.css"/>
     <link rel="stylesheet" type="text/css" href="./css/agotado.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/perfil.css"/>
 
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -17,63 +18,73 @@
 </head>
 <body>
 	<header>
-			
-		<a href="./perfil.php" title="Iniciar Sesion" id="iniciosesion" >Mis Citas</a>
-
-		<a href="./crearCita.php" title="Registrarse" id="registrarse" >Crear cita</a>
-
-        <a href="./miInfo.php" title="Registrarse" id="registrarse" >Mi Informacion</a>
-
-        <a href="./ayuda.php" title="Registrarse" id="registrarse" >Ayuda</a>
-
-		<a href="./notificaciones.php" title="notificaciones">
+    <a href="./notificaciones.php" title="notificaciones">
 			<img src="./imagenes/carrito.png">
-		</a>
+		</a>	
+		<a href="./ayuda.php" title="Ayuda" id="registrarse" >Ayuda</a>
+        <a href="./miInfo.php" title="Mi info" id="registrarse" >Mi Informacion</a>
+        <a href="./elegirEnfermedad.php" title="Crear Cita" id="registrarse" >Crear cita</a>
+        <a href="./perfilImss.php" title="Mis citas" id="iniciosesion" >Mis Citas</a>
+
+		
+
+        
+
+        
+
+		
 
 	</header>
 	
 
 	<section>
-		
+    <div >
+			
+            <div class="citas">
 	<?php
 		include 'conexion.php';
-		$re=$mysql->query("select * from productos where estado=1")or die($mysql-> error);
+		$re=$mysql->query("select idCita,enfermedad, fecha,hora,c.idUsuario, activo, u.nombre, s.direccion from citas c
+        join usuario u on u.idUsuario=c.idUsuario
+        join sucursal s on c.idsucursal= s.idsucursal where activo=1 and c.idUsuario=1")or die($mysql-> error);
+        ?>
+        <div> <h1>Citas actuales para:<?php echo "Nombre" ?> </h1>
+    <?php
+    
 		while ($f=$re->fetch_array()) {
         ?>
-        <div class="producto">
-			<center>
-
-        <?php
-        if($f['existencia']!=0){
+        
+            <?php
+        if($f['activo']==1){
         ?>
-            <div class="contenedor-img">
+        
+            <div class="contenedor-cita">
+            
+            <span><?php echo "Cita agendada para el dia: ". $f['fecha'];?></span><br>
+            <span><?php echo "A las: ".$f['hora'];?></span><br>
+            <span><?php echo "Por la enfermed de: ". $f['enfermedad'];?></span><br>
+            <span><?php echo "En el imms con direccion: ". $f['direccion'];?></span><br>
 
-                <img class= "producto-image" src="./productos/<?php echo $f['imagen'];?>"><br>
+            <a href="./cancelar.php?idCita=<?php  echo $f['idCita'];?>">Cancelar cita</a>
                 </div>
-				<span><?php echo $f['nombre'];?></span><br>
-    <?php echo ($f['existencia']>0) ? 'Existencias: '.$f['existencia'] : 'Sin existencias';?><br>
-                <a href="./detalles.php?id=<?php  echo $f['id'];?>">ver</a>
+				
+                
         <?php
         }
-        else{
-            ?>
-            <div class="contenedor-img">
-            <img class= "producto-image" src="./productos/<?php echo $f['imagen'];?>"><br>
-            <?php echo ($f['existencia']>0) ? '' : '<p class="text-img">Agotado</p>';?>
-            </div>
-            <span><?php echo $f['nombre'];?></span><br>
-            <?php echo ($f['existencia']>0) ? 'Existencias: '.$f['existencia'] : 'Sin existencias';?><br>
 
-        <?php     
-        }     
-        ?>
-          
-			</center>
+    }
+            ?>
+
+        </div>	
 		</div>
-	<?php
-		}
-	?>
-		
+
+		   <div >
+                   <h1>¿Quieres crear una cita? Has clic en crear cita</h1>
+                   <a href="elegirEnfermedad.php">Crear cita</a>
+           
+                
+                
+                </div> 
+            
 	</section>
 
 	<footer>
